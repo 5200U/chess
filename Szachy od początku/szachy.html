@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+  <title>SZACHY</title>
+    <meta charset="UTF-8">
+    <link rel="Shortcut icon" href="icon.png" />
+    <link rel="Stylesheet" href="style.css">
+    <script src="logika.js"></script>
+    <script type=”text/javascript” src=”https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js”></script>
+</head>
+<!--Obramowanie zewnętrzne-->
+<div id="ramka">
+<!--Obramowanie zewnętrzne koniec-->
+<!--u góry-->
+    <div class="litery">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+    </div>
+<!--u góry koniec-->
+<!--po prawej-->
+    <div class="cyfry">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+<!--po prawej koniec-->
+<!--po lewej-->
+    <div class="cyfry1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+<!--Szachownica-->
+<div class="szachy">
+<!--ramka wewnętrzna-->
+<div class="rama">
+<!--Poziomo 1 wiersz-->
+<div class="wiersz">
+<!--Pionowo 1 komórka--><div class="a1"><div class="cWieza">&#9820;</div></div>
+<!--Pionowo 2 komórka--><div class="b1"><div class="cGoniec">&#9822;</div></div>
+<!--Pionowo 3 komórka--><div class="c1"><div class="cSkoczek">&#9821;</div></div>
+<!--Pionowo 4 komórka--><div class="d1"><div class="cHetman">&#9819;</div></div>
+<!--Pionowo 5 komórka--><div class="e1"><div class="cKrol">&#9818;</div></div>
+<!--Pionowo 6 komórka--><div class="f1"><div class="cSkoczek">&#9821;</div></div>
+<!--Pionowo 7 komórka--><div class="g1"><div class="cGoniec">&#9822;</div></div>
+<!--Pionowo 8 komórka--><div class="h1"><div class="cWieza">&#9820;</div></div>
+</div>
+<!--Koniec 1 wiersza-->
+<!--Początek poziomo 2 wiersz-->
+<div class="wiersz">
+<!--Pionowo 1 komórka--><div class="a2"><div class="cPionek1">&#9823;</div></div>
+<!--Pionowo 2 komórka--><div class="b2"><div class="cPionek2">&#9823;</div></div>
+<!--Pionowo 3 komórka--><div class="c2"><div class="cPionek3">&#9823;</div></div>
+<!--Pionowo 4 komórka--><div class="d2"><div class="cPionek4">&#9823;</div></div>
+<!--Pionowo 5 komórka--><div class="e2"><div class="cPionek5">&#9823;</div></div>
+<!--Pionowo 6 komórka--><div class="f2"><div class="cPionek6">&#9823;</div></div>
+<!--Pionowo 7 komórka--><div class="g2"><div class="cPionek7">&#9823;</div></div>
+<!--Pionowo 8 komórka--><div class="h2"><div class="cPionek8">&#9823;</div></div>
+</div>
+<!--Koniec 2 wiersza-->
+<!--Początek poziomo 3 wiersz-->
+<div class="wiersz">
+<!--Pionowo 1 komórka--><div class="a3"></div>
+<!--Pionowo 2 komórka--><div class="b3"></div>
+<!--Pionowo 3 komórka--><div class="c3"></div>
+<!--Pionowo 4 komórka--><div class="d3"></div>
+<!--Pionowo 5 komórka--><div class="e3"></div>
+<!--Pionowo 6 komórka--><div class="f3"></div>
+<!--Pionowo 7 komórka--><div class="g3"></div>
+<!--Pionowo 8 komórka--><div class="h3"></div>
+</div>
+<!--Koniec 3 wiersza-->
+<!--Początek poziomo 4 wiersz-->
+<div class="wiersz">
+<!--Pionowo 1 komórka--><div class="a4"></div>
+<!--Pionowo 2 komórka--><div class="b4"></div>
+<!--Pionowo 3 komórka--><div class="c4"></div>
+<!--Pionowo 4 komórka--><div class="d4"></div>
+<!--Pionowo 5 komórka--><div class="e4"></div>
+<!--Pionowo 6 komórka--><div class="f4"></div>
+<!--Pionowo 7 komórka--><div class="g4"></div>
+<!--Pionowo 8 komórka--><div class="h4"></div>
+</div>
+<!--Koniec 4 wiersza-->
+<!--Początek poziomo 5 wiersz-->
+<div class="wiersz">
+<!--Pionowo 1 komórka--><div class="a5"></div>
+<!--Pionowo 2 komórka--><div class="b5"></div>
+<!--Pionowo 3 komórka--><div class="c5"></div>
+<!--Pionowo 4 komórka--><div class="d5"></div>
+<!--Pionowo 5 komórka--><div class="e5"></div>
+<!--Pionowo 6 komórka--><div class="f5"></div>
+<!--Pionowo 7 komórka--><div class="g5"></div>
+<!--Pionowo 8 komórka--><div class="h5"></div>
+</div>
+<!--Koniec 5 wiersza-->
+<!--Początek poziomo 6 wiersz-->
+<div class="wiersz">
+<!--Pionowo 1 komórka--><div class="a6"></div>
+<!--Pionowo 2 komórka--><div class="b6"></div>
+<!--Pionowo 3 komórka--><div class="c6"></div>
+<!--Pionowo 4 komórka--><div class="d6"></div>
+<!--Pionowo 5 komórka--><div class="e6"></div>
+<!--Pionowo 6 komórka--><div class="f6"></div>
+<!--Pionowo 7 komórka--><div class="g6"></div>
+<!--Pionowo 8 komórka--><div class="h6"></div>
+</div>
+<!--Koniec 6 wiersza-->
+<!--Początek poziomo 7 wiersz-->
+<div class="wiersz">
+<!--Pionowo 1 komórka--><div class="a7"><div class="bPionek1">&#9817;</div></div>
+<!--Pionowo 2 komórka--><div class="b7"><div class="bPionek2">&#9817;</div></div>
+<!--Pionowo 3 komórka--><div class="c7"><div class="bPionek3">&#9817;</div></div>
+<!--Pionowo 4 komórka--><div class="d7"><div class="bPionek4">&#9817;</div></div>
+<!--Pionowo 5 komórka--><div class="e7"><div class="bPionek5">&#9817;</div></div>
+<!--Pionowo 6 komórka--><div class="f7"><div class="bPionek6">&#9817;</div></div>
+<!--Pionowo 7 komórka--><div class="g7"><div class="bPionek7">&#9817;</div></div>
+<!--Pionowo 8 komórka--><div class="h7"><div class="bPionek8">&#9817;</div></div>
+</div>
+<!--Koniec 7 wiersza-->
+<!--Początek poziomo 8 wiersz-->
+<div class="wiersz">
+<!--Pionowo 1 komórka--><div class="a8"><div class="bWieza">&#9814;</div></div>
+<!--Pionowo 2 komórka--><div class="b8"><div class="bSkoczek">&#9816;</div></div>
+<!--Pionowo 3 komórka--><div class="c8"><div class="bGoniec">&#9815;</div></div>
+<!--Pionowo 4 komórka--><div class="d8"><div class="bHetman">&#9813;</div></div>
+<!--Pionowo 5 komórka--><div class="e8"><div class="bKrol">&#9812;</div></div>
+<!--Pionowo 6 komórka--><div class="f8"><div class="bGoniec">&#9815;</div></div>
+<!--Pionowo 7 komórka--><div class="g8"><div class="bSkoczek">&#9816;</div></div>
+<!--Pionowo 8 komórka--><div class="h8"><div class="bWieza">&#9814;</div></div>
+</div>
+<!--Koniec 8 wiersza-->
+  </div>
+</div>
+<!--u dołu czerwone--><div class="litery1">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+                <div>E</div>
+                <div>F</div>
+                <div>G</div>
+                <div>H</div>
+            </div>
+</div>
+<!-- Panel powiadomień--></br>
+
+</div>
+
+
+
+
+
+
+
+<!-- Lista RUCHÓW -->
+<!-- BICIE PIONEK 1 pole w górę po skosie w prawo lub w lewo zatrzymanie w polu zbitej figury +1pkt dla bijącego pionkiem -->
+<!-- pionek I-szy ruch do 2 pól w przód czyli albo 1 albo 2 pola w przód BICIE ZABLOKOWANE -->
+<!-- pionek II-gi i następne ruchy to 1 pole w przód BICIE ODBLOKOWANE -->
+<!-- SPECIAL jeśli pionek dojdzie na koniec planszy to zamienia się w dowolną figórę inną niż pionek i król (nawet jeśli nie jest zbita) -wieża -goniec -hetman -skoczek +5pkt -->
+
+<!-- BICIE WIEŻA poziomo i pionowo o dowolną liczbę pól do miejsca bitej figury zatrzymanie w polu zbitej figóry +1pkt dla bijącego wieżą -->
+<!-- wieża porusza się o dowolną liczbę pól w poziomie i pionie -->
+<!-- ROSZADA wieża + król i król rusza się o dwa pola w stronę lewej lub prawej wieży a wieża idzie w drugą stronę staje za królem -->
+<!-- ROSZADA jest możliwa kiedy król i wieża biorąca udział w roszadzie nie wykonały jeszcze ruchu -->
+<!-- ROSZADA jest możliwa kiedy między królem a wieżą nie ma innych figur -->
+<!-- ROSZADA nie jest możliwa kiedy król jest szachowany, nie może też bić ani zakończyć ruchu na polu atakowanym przez figurę przeciwnika -->
+<!-- ROSZADA jest możliwa kiedy król oraz wieża znajdują się w tym samym rzędzie -->
+
+<!-- BICIE GONIEC po skosie w prawo i w lewo o dowolną liczbę pól do miejsca zbitej figury +1pkt dla bijącego gońcem -->
+<!-- goniec porusza się po skosie w prawo i w lewo oraz w górę i w dół o dowolną liczbę pól -->
+
+<!-- BICIE HETMAN(DAMKA) po skosie w prawo i w lewo oraz poziomo i pionowo o dowolną liczbę pól do miejsca zbitej figury +1pkt dla bijącego hetmanem-->
+<!-- hetmna(damka) porusza się o dowolną liczbę pól w poziomie, pionie i na ukos ruchy hetmana to ruchy wieży + gońca -->
+
+<!-- BICIE SKOCZEK(KOŃ) dwa pola w górę JEDNO W PRAWO LUB W LEWO dwa pola w dół JEDNO W PRAWO LUB W LEWO dwa pola w lewo JEDNO W GÓRĘ LUB W DÓŁ dwa pola w prawo JEDNO W GÓRĘ LUB W DÓŁ zajmuje miejsce jeśli jest tam zajeta figura +1pkt -->
+<!-- skoczek(koń) porusza się o dwa pola w górę JEDNO W PRAWO LUB W LEWO dwa pola w dół JEDNO W PRAWO LUB W LEWO dwa pola w lewo JEDNO W GÓRĘ LUB W DÓŁ dwa pola w prawo JEDNO W GÓRĘ LUB W DÓŁ -->
+
+<!-- BICIE KRÓL na ukos o jedno pole w lewo lub prawo oraz w poziomie i pionie o jedno pole do miejsca zbitej figóry +2pkt dla bijącego królem -->
+<!-- król porusza się na ukos o jedno pole w lewo lub prawo oraz w poziomie i pionie o jedno pole -->
+<!-- SPECIAL jeśli król zostanie zagrożony zbiciem przez inną figórę następuje SZACH +5pkt dla przeciwnika i należy uciec na inne wolne pole lub zasłonić się figórą -->
+<!-- SPECIAL jeśli król nie będzie miał pola na które może uciec lub żadnej figóry która go osłoni następuje SZACH MAT +10pkt dla przeciwnika i koniec gry -->
+</body>
+</html>
